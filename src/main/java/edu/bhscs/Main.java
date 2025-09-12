@@ -5,14 +5,15 @@
 
 /*
  * DESCRIPTION: Whatever Mr. Reiber commands
- * INPUT: prei
+ * INPUT: dunno what this is about yet
+ * OUTPUT: print garbage!
  * EDGE CASE: *
  */
 
 package edu.bhscs;
 
 class Main {
-  public static void main(String[] args) {
-    System.out.println("||||||||__PROGRAM START__||||||||");
+  public static void main(String[]args){
+   System.out.println("||||||||__PROGRAM START__||||||||");
   }
 }
