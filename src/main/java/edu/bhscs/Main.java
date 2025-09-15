@@ -10,24 +10,26 @@
  * EDGE CASE: *
  */
 
-package edu.bhscs;
+ package edu.bhscs;
 
-public static final char A = 'a';
 
-class Main {
+ class Main {
+
+  public static final char A = 'a';
+
   public static void main(String[] args){
 
-    int someNumber = 67;
+     int someNumber = 67;
 
-    System.out.println("67!" + A + someNumber);
-    System.out.print(A + "?" + A + someNumber);
-    System.out.print(A + A + someNumber);
-    System.out.println();
-    System.out.println(x: "this is neet");
-    System.out.println();
-    System.out.println();
-    System.out.println(x: "okay Im done");
+     System.out.println("67!" + A + someNumber);
+     System.out.print(A + "?" + A + someNumber);
+     System.out.print(A + A + someNumber);
+     System.out.println();
+     System.out.println("this is neet");
+     System.out.println();
+     System.out.println();
+     System.out.println("okay Im done");
 
 
-  }
-}
+   }
+ }
