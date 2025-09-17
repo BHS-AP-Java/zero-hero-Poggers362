@@ -7,7 +7,8 @@ public class Awesome {
   // V
 
   String name;
-
+  String knoledge;
+  String knoledgeagain;
 
 
   public Awesome(String name) {
@@ -19,4 +20,23 @@ public class Awesome {
     return "I am " + this.name;
 
   }
+
+  void learnSomething(String knowledge){
+    this.knoledge = knowledge;
+  }
+  String getKnowledge(){
+    return this.knoledge;
+  }
+
+  void learnSomethingagain(String knowledge) {
+    this.knoledge = knoledgeagain;
+  }
+
+  String getKnowledgeagain() {
+    return this.knoledgeagain;
+  }
+
+
 }
+
+

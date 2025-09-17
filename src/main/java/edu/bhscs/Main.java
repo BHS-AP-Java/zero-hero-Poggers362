@@ -19,22 +19,9 @@ class Main {
 
   public static void main(String[] args) {
 
-    // while loop and list testing
-    int someNumber = 7;
-    List<Integer> myNum = new ArrayList<Integer>(5);
-    while (someNumber < 35) {
-      someNumber++;
-      if (someNumber % 5 == 0) {
-        System.out.println(someNumber);
-        myNum.add(someNumber);
-      }
-    }
+
 
     // Mostly pointless print statements
-    System.out.println(myNum + "working list!");
-    System.out.println("67!" + A + someNumber);
-    System.out.print(A + "?" + A + someNumber);
-    System.out.print(A + A + someNumber);
     System.out.println();
     System.out.println("this is neet");
     System.out.println();
@@ -58,8 +45,32 @@ class Main {
     System.out.println(five.getName());
     System.out.println(six.getName());
 
+    one.learnSomething("I know stuff");
+
+    System.out.println(one.getKnowledge() );
+
+    one.learnSomething("I know even more stuff!");
+
+    System.out.println(one.getKnowledge());
+
+
+    // while loop and list testing
+    int someNumber = 7;
+    List<Integer> myNum = new ArrayList<Integer>(5);
+    while (someNumber < 35) {
+      someNumber++;
+      if (someNumber % 5 == 0) {
+        System.out.println(someNumber);
+        myNum.add(someNumber);
+      }
+    }
+
+    // my list works!
+    System.out.println(myNum + "working list!");
 
   }
+
+
 }
 
 
