@@ -17,7 +17,16 @@ class Main {
 
   public static void main(String[] args) {
 
-     int someNumber = 67;
+
+    int someNumber = 7;
+    int[] myNum = {};
+    while (someNumber < 35) {
+    someNumber++;
+    if (someNumber % 5 == 0) {
+      System.out.println(someNumber);
+      // make list works myNum.add(int, index someNumber);
+    }
+    }
 
      System.out.println("67!" + A + someNumber);
      System.out.print(A + "?" + A + someNumber);
