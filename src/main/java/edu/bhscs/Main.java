@@ -29,6 +29,8 @@ class Main {
       }
     }
 
+    //Mostly pointless print statements
+    System.out.println(myNum + "working list!");
     System.out.println("67!" + A + someNumber);
     System.out.print(A + "?" + A + someNumber);
     System.out.print(A + A + someNumber);
@@ -37,5 +39,7 @@ class Main {
     System.out.println();
     System.out.println();
     System.out.println("okay Im done");
+
   }
 }
+
