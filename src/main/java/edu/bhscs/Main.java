@@ -1,11 +1,13 @@
 // Linus Ortiz
 // P2
 // Zero Hero
-// 9/12/2025
+// 9/19/2025
 
 /*
- * DESCRIPTION: Whatever Mr. Reiber commands INPUT: dunno what this is about yet OUTPUT: print
- * garbage! EDGE CASE: *
+ * DESCRIPTION: Have a cake that can be different and be purchased
+ * INPUT: dunno yet
+ * OUTPUT: Guy with a cake
+ * EDGE CASE: Still don't know
  */
 
 package edu.bhscs;
@@ -15,16 +17,17 @@ import java.util.List;
 
 class Main {
 
-  public static final char A = 'a';
-
   public static void main(String[] args) {
 
-    // Mostly pointless print statements
-    System.out.println();
-    System.out.println("this is neet");
-    System.out.println();
-    System.out.println();
-    System.out.println("okay Im done");
+
+    List<String> myCake = new ArrayList<String>();
+
+
+
+
+
+
+
 
     Awesome one = new Awesome("1");
     Awesome two = new Awesome("2");
@@ -48,18 +51,31 @@ class Main {
 
     System.out.println(one.getKnowledge());
 
-    // while loop and list testing
-    int someNumber = 7;
-    List<Integer> myNum = new ArrayList<Integer>(5);
-    while (someNumber < 35) {
-      someNumber++;
-      if (someNumber % 5 == 0) {
-        System.out.println(someNumber);
-        myNum.add(someNumber);
-      }
-    }
 
-    // my list works!
-    System.out.println(myNum + "working list!");
+
+    Cake taste = new Cake("vanilla");
+
+    taste.learnFlavour("Chocolate Frosting");
+
+
+    System.out.println(taste.getFlavour());
+    myCake.add(taste.getFlavour());
+
+    System.out.println(taste.getFrostingFlavour());
+    myCake.add(taste.getFrostingFlavour());
+
+
+
+    System.out.println(myCake);
+
+
+    /*
+     * while loop and list testing int someNumber = 7; List<Integer> myNum = new
+     * ArrayList<Integer>(5); while (someNumber < 35) { someNumber++; if (someNumber % 5 == 0) {
+     * System.out.println(someNumber); myNum.add(someNumber); } }
+     *
+     *
+     * // my list works! System.out.println(myNum + "working list!");
+     */
   }
 }
