@@ -19,8 +19,6 @@ class Main {
 
   public static void main(String[] args) {
 
-
-
     // Mostly pointless print statements
     System.out.println();
     System.out.println("this is neet");
@@ -28,15 +26,12 @@ class Main {
     System.out.println();
     System.out.println("okay Im done");
 
-
     Awesome one = new Awesome("1");
     Awesome two = new Awesome("2");
     Awesome three = new Awesome("3");
     Awesome four = new Awesome("4");
     Awesome five = new Awesome("5");
     Awesome six = new Awesome("6");
-
-
 
     System.out.println(one.getName());
     System.out.println(two.getName());
@@ -47,12 +42,11 @@ class Main {
 
     one.learnSomething("I know stuff");
 
-    System.out.println(one.getKnowledge() );
+    System.out.println(one.getKnowledge());
 
     one.learnSomething("I know even more stuff!");
 
     System.out.println(one.getKnowledge());
-
 
     // while loop and list testing
     int someNumber = 7;
@@ -67,10 +61,5 @@ class Main {
 
     // my list works!
     System.out.println(myNum + "working list!");
-
   }
-
-
 }
-
-

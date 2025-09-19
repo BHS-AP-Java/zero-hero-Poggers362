@@ -10,7 +10,6 @@ public class Awesome {
   String knoledge;
   String knoledgeagain;
 
-
   public Awesome(String name) {
     System.out.println("I am awesome " + name);
     this.name = name;
@@ -18,13 +17,13 @@ public class Awesome {
 
   String getName() {
     return "I am " + this.name;
-
   }
 
-  void learnSomething(String knowledge){
+  void learnSomething(String knowledge) {
     this.knoledge = knowledge;
   }
-  String getKnowledge(){
+
+  String getKnowledge() {
     return this.knoledge;
   }
 
@@ -35,8 +34,4 @@ public class Awesome {
   String getKnowledgeagain() {
     return this.knoledgeagain;
   }
-
-
 }
-
-
