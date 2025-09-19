@@ -21,7 +21,7 @@ class Main {
 
 
     List<String> myCake = new ArrayList<String>();
-
+    String[] cakePreference = new String[] {"vanilla","strawberry"};
 
 
 
@@ -64,9 +64,11 @@ class Main {
     System.out.println(taste.getFrostingFlavour());
     myCake.add(taste.getFrostingFlavour());
 
-
-
     System.out.println(myCake);
+
+    if (myCake.get(0) == cakePreference.get(0)) {
+      System.out.println("I like it");
+    }
 
 
     /*
