@@ -1,10 +1,6 @@
 package edu.bhscs;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Cake {
-
 
   String flavour;
   String frostingFlavour;
@@ -16,26 +12,14 @@ public class Cake {
   }
 
   String getFlavour() {
-    return "I am " + this.flavour;
+    return this.flavour;
+  }
 
-    }
+  void learnFlavour(String frostingFlavour) {
+    this.frostingFlavour = frostingFlavour;
+  }
 
-
-
-    void learnFlavour(String frostingFlavour) {
-      this.frostingFlavour = frostingFlavour;
-    }
-
-    String getFrostingFlavour() {
-      return this.frostingFlavour;
-    }
-
+  String getFrostingFlavour() {
+    return this.frostingFlavour;
+  }
 }
-
-
-
-
-
-
-
-
