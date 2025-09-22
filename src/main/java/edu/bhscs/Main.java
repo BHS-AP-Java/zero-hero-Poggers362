@@ -4,7 +4,7 @@
 // 9/19/2025
 
 /*
- * DESCRIPTION: Have a cake that can be different and be purchased
+ * DESCRIPTION: Have a cake that can be different and be purchased (very inefficiently)
  * INPUT: dunno yet
  * OUTPUT: Guy with a cake
  * EDGE CASE: Still don't know
@@ -20,8 +20,6 @@ class Main {
   public static void main(String[] args) {
 
     List<String> myCake = new ArrayList<String>();
-
-    List<String> badStuff = new ArrayList<String>();
 
     List<String> cakePreference = new ArrayList<String>();
     cakePreference.add("vanilla");
