@@ -25,28 +25,6 @@ class Main {
     cakePreference.add("vanilla");
     cakePreference.add("strawberry");
 
-    Awesome one = new Awesome("1");
-    Awesome two = new Awesome("2");
-    Awesome three = new Awesome("3");
-    Awesome four = new Awesome("4");
-    Awesome five = new Awesome("5");
-    Awesome six = new Awesome("6");
-
-    System.out.println(one.getName());
-    System.out.println(two.getName());
-    System.out.println(three.getName());
-    System.out.println(four.getName());
-    System.out.println(five.getName());
-    System.out.println(six.getName());
-
-    one.learnSomething("I know stuff");
-
-    System.out.println(one.getKnowledge());
-
-    one.learnSomething("I know even more stuff!");
-
-    System.out.println(one.getKnowledge());
-
     Cake taste = new Cake("vanilla");
 
     taste.learnFlavour("Chocolate Frosting");
@@ -59,14 +37,12 @@ class Main {
 
     System.out.println(myCake);
     System.out.println(cakePreference);
-    for (int i = 0; i < 2; i++) {  //babies first for  loop
+    for (int i = 0; i < 2; i++) { // babies first for  loop
       if (myCake.get(i) != cakePreference.get(i)) {
         System.out.println("I don't want " + myCake.get(i) + " I wanted " + cakePreference.get(i));
-
       }
       if (myCake.get(i) == cakePreference.get(i)) {
         System.out.println("I like it");
-
       }
     }
 
