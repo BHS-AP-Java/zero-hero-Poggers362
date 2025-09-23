@@ -22,12 +22,12 @@ class Main {
     List<String> myCake = new ArrayList<String>();
 
     List<String> cakePreference = new ArrayList<String>();
-    cakePreference.add("vanilla");
-    cakePreference.add("strawberry");
+    cakePreference.add("chocolate cake");
+    cakePreference.add("strawberry frosting");
 
-    Cake taste = new Cake("vanilla");
+    Cake taste = new Cake("vanilla cake");
 
-    taste.learnFlavour("Chocolate Frosting");
+    taste.learnFlavour("strawberry frosting");
 
     System.out.println(taste.getFlavour());
     myCake.add(taste.getFlavour());
@@ -39,20 +39,12 @@ class Main {
     System.out.println(cakePreference);
     for (int i = 0; i < 2; i++) { // babies first for  loop
       if (myCake.get(i) != cakePreference.get(i)) {
-        System.out.println("I don't want " + myCake.get(i) + " I wanted " + cakePreference.get(i));
+        System.out.println(
+            ("I don't want " + myCake.get(i)) + (" I wanted " + cakePreference.get(i)));
       }
       if (myCake.get(i) == cakePreference.get(i)) {
-        System.out.println("I like it");
+        System.out.println("I like the " + cakePreference.get(i));
       }
     }
-
-    /* List Jumbo
-     * while loop and list testing int someNumber = 7; List<Integer> myNum = new
-     * ArrayList<Integer>(5); while (someNumber < 35) { someNumber++; if (someNumber % 5 == 0) {
-     * System.out.println(someNumber); myNum.add(someNumber); } }
-     *
-     *
-     * // my list works! System.out.println(myNum + "working list!");
-     */
   }
 }
