@@ -4,11 +4,9 @@ import java.util.List;
 
 public class Baker {
 
-  List<String> Flavours = List.of("Chocolate", "Vannilla", "Strawberry");
-  String theFlavour = Flavours.get((int)(Math.random() * 3));
-  String theFrostingFlavour = Flavours.get((int) (Math.random() * 3));
-
-
+  List<String> flavours = List.of("Chocolate", "Vannilla", "Strawberry");
+  String theFlavour = flavours.get((int) (Math.random() * 3));
+  String theFrostingFlavour = flavours.get((int) (Math.random() * 3));
 
   public Baker(String theFlavour) {
     System.out.println(theFlavour);
@@ -27,5 +25,3 @@ public class Baker {
     return this.theFrostingFlavour;
   }
 }
-
-
