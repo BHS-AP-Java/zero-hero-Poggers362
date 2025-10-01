@@ -28,7 +28,7 @@ class Main {
     //Figuring out what the cake is.
     Cake taste = new Cake("vanilla cake");
 
-    taste.learnFlavour("strawberry frosting");
+    taste.learnFlavour();
 
     System.out.println(taste.getFlavour());
     myCake.add(taste.getFlavour());

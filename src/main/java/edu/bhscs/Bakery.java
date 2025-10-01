@@ -16,7 +16,7 @@ public class Cake {
   }
 
   void learnFlavour(String frostingFlavour) {
-    this.frostingFlavour = frostingFlavour;
+    this.frostingFlavour = "strawberry frosting";
   }
 
   String getFrostingFlavour() {
