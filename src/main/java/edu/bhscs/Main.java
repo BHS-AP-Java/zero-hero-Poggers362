@@ -5,8 +5,8 @@
 
 /*
  * DESCRIPTION: Have a cake that can be different and be purchased (very inefficiently)
- * INPUT:
- * OUTPUT: Guy with a cake
+ * INPUT: What frosting and cake do you want?
+ * OUTPUT: Is the cake for you
  * EDGE CASE: Is the cake satisfactory
  */
 
