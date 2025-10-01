@@ -21,14 +21,18 @@ class Main {
 
     List<String> myCake = new ArrayList<String>();
 
-    List<String> cakePreference = new ArrayList<String>();
-    cakePreference.add("chocolate cake");
-    cakePreference.add("strawberry frosting");
 
-    // Figuring out what the cake is.
-    Bakery taste = new Bakery("vanilla cake");
+    List<String> flavours = List.of("chocolate", "vanilla", "strawberry"); // List of optional flavours
 
-    taste.learnFlavour("strawberry frosting");
+    List<String> cakePreference = List.of(
+      (flavours.get((int) (Math.random() * 3)) + " cake"),
+      (flavours.get((int) (Math.random() * 3)) + " frosting"));
+
+
+       // Figuring out what the cake is.
+    Bakery taste = new Bakery(flavours.get((int) (Math.random() * 3)) + " cake");
+
+    taste.learnFlavour(flavours.get((int) (Math.random() * 3)) + " frosting");
 
     System.out.println(taste.getFlavour());
     myCake.add(taste.getFlavour());
