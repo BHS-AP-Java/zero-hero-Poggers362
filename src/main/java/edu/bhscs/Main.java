@@ -5,9 +5,9 @@
 
 /*
  * DESCRIPTION: Have a cake that can be different and be purchased (very inefficiently)
- * INPUT: dunno yet
+ * INPUT:
  * OUTPUT: Guy with a cake
- * EDGE CASE: Still don't know
+ * EDGE CASE: Is the cake satisfactory
  */
 
 package edu.bhscs;
@@ -25,6 +25,7 @@ class Main {
     cakePreference.add("chocolate cake");
     cakePreference.add("strawberry frosting");
 
+    //Figuring out what the cake is.
     Cake taste = new Cake("vanilla cake");
 
     taste.learnFlavour("strawberry frosting");
@@ -37,11 +38,15 @@ class Main {
 
     System.out.println(myCake);
     System.out.println(cakePreference);
-    for (int i = 0; i < 2; i++) { // babies first for  loop
+
+    // Checks to see if the cake made is what you want
+    for (int i = 0; i < 2; i++) {
+       //If they didn't like it they tell you
       if (myCake.get(i) != cakePreference.get(i)) {
         System.out.println(
-            ("I don't want " + myCake.get(i)) + (" I wanted " + cakePreference.get(i)));
+        ("I don't want " + myCake.get(i)) + (" I wanted " + cakePreference.get(i)));
       }
+       //If they did like it they tell you
       if (myCake.get(i) == cakePreference.get(i)) {
         System.out.println("I like the " + cakePreference.get(i));
       }
