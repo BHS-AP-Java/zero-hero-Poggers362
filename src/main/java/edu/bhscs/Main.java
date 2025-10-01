@@ -26,7 +26,7 @@ class Main {
     cakePreference.add("strawberry frosting");
 
     // Figuring out what the cake is.
-    Cake taste = new Cake("vanilla cake");
+    Bakery taste = new Bakery("vanilla cake");
 
     taste.learnFlavour("strawberry frosting");
 

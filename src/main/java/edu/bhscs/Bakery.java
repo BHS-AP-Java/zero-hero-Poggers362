@@ -1,12 +1,12 @@
 package edu.bhscs;
 
-public class Cake {
+public class Bakery {
 
   String flavour;
   String frostingFlavour;
   String price;
 
-  public Cake(String flavour) {
+  public Bakery(String flavour) {
     System.out.println(flavour);
     this.flavour = flavour;
   }
@@ -16,7 +16,7 @@ public class Cake {
   }
 
   void learnFlavour(String frostingFlavour) {
-    this.frostingFlavour = "strawberry frosting";
+    this.frostingFlavour = frostingFlavour;
   }
 
   String getFrostingFlavour() {
