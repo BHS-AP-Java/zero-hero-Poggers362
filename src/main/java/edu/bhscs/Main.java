@@ -20,19 +20,18 @@ class Main {
 
   public static void main(String[] args) {
 
-
-// Getting user input on what kind of cake and frosting they'd like.
+    // Getting user input on what kind of cake and frosting they'd like.
     Scanner preference = new Scanner(System.in);
 
     System.out.println("What kind of cake do you want?");
     String preferedCake = preference.nextLine();
-    System.out.println(preferedCake);
+    // Debug System.out.println(preferedCake);
 
     System.out.println("What kind of cake do you want?");
     String preferedFrosting = preference.nextLine();
-    System.out.println(preferedFrosting);
+    // Debug System.out.println(preferedFrosting);
 
-
+    preference.close();
 
 
     List<String> flavours = List.of("chocolate", "vanilla", "strawberry");
@@ -43,22 +42,19 @@ class Main {
     cakePreference.add(preferedCake + " cake");
     cakePreference.add(preferedFrosting + " frosting");
 
-
-
-
     // Figuring out what the cake is randomly.
     Bakery taste = new Bakery(flavours.get((int) (Math.random() * 3)) + " cake");
 
     taste.learnFlavour(flavours.get((int) (Math.random() * 3)) + " frosting");
 
-    System.out.println(taste.getFlavour());
+    // Debug System.out.println(taste.getFlavour());
     myCake.add(taste.getFlavour());
 
-    System.out.println(taste.getFrostingFlavour());
+    // Debug System.out.println(taste.getFrostingFlavour());
     myCake.add(taste.getFrostingFlavour());
 
-    System.out.println(myCake);
-    System.out.println(cakePreference);
+    // Debug System.out.println(myCake);
+    // Debug System.out.println(cakePreference);
 
     // Checks to see if the cake made is what you want
     for (int i = 0; i < 2; i++) {

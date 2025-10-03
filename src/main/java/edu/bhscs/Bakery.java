@@ -7,7 +7,7 @@ public class Bakery {
   String price;
 
   public Bakery(String flavour) {
-    System.out.println(flavour);
+    // Debug System.out.println(flavour);
     this.flavour = flavour;
   }
 
