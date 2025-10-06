@@ -33,7 +33,6 @@ class Main {
 
     preference.close();
 
-
     List<String> flavours = List.of("chocolate", "vanilla", "strawberry");
 
     List<String> myCake = new ArrayList<String>();
@@ -50,11 +49,7 @@ class Main {
     // Debug System.out.println(taste.getFlavour());
     myCake.add(taste.getFlavour());
 
-    // Debug System.out.println(taste.getFrostingFlavour());
     myCake.add(taste.getFrostingFlavour());
-
-    // Debug System.out.println(myCake);
-    // Debug System.out.println(cakePreference);
 
     // Checks to see if the cake made is what you want
     for (int i = 0; i < 2; i++) {
