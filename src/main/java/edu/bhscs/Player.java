@@ -2,12 +2,12 @@ package edu.bhscs;
 
 import java.util.Scanner;
 
-public class player {
+public class Player {
 
   String name;
   Scanner s;
 
-  public player(String name) {
+  public Player(String name) {
 
     this.name = name;
     this.s = new Scanner(System.in);
@@ -21,4 +21,11 @@ public class player {
 
     System.out.println(question);
   }
+
+  public String giveAnswer(String question) {
+
+    System.out.println(question);
+    return s.nextLine();
+  }
+  ;
 }

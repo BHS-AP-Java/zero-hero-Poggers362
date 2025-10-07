@@ -1,27 +1,33 @@
 package edu.bhscs;
 
-import java.util.List;
-
 public class Baker {
-
-  List<String> flavours = List.of("Chocolate", "Vannilla", "Strawberry");
-  String theFlavour = flavours.get((int) (Math.random() * 3));
-  String theFrostingFlavour = flavours.get((int) (Math.random() * 3));
-
-  public Baker(String theFlavour) {
-    System.out.println(theFlavour);
-    this.theFlavour = theFlavour;
+  // PROPERTIES AND FIELDS
+  Player p;
+  Flour f;
+  Store placeOfWork;
+  int cash;
+  String name = "wow";
+  // CONSTRUCTOR
+  Baker(Player p) {
+    this.p = p;
   }
 
-  String getTheFlavour() {
-    return this.theFlavour;
+  // METHODS
+  void takeOrder(int price, Customer c) {
+    cash += c.pay(price);
+    c.takeCake(bakeCake());
   }
 
-  void learnTheFlavour(String theFrostingFlavour) {
-    this.theFrostingFlavour = theFrostingFlavour;
+  Cake bakeCake() {
+    String answer = this.p.giveAnswer("what cake do you you want?");
+    return new Cake(answer, this.f);
   }
 
-  String getTheFrostingFlavour() {
-    return this.theFrostingFlavour;
+  void takeJob(Store bakery) {
+    String doYouWantToWorkHere = this.p.giveAnswer("Do you want to work at " + bakery.getName());
+    if(doYouWantToWorkHere.equals("y")){
+      this.placeOfWork = bakery;
+      System.out.println(this.name + " now works at " + bakery.getName() );
+    }
   }
 }
