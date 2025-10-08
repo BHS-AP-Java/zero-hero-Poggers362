@@ -2,20 +2,14 @@ package edu.bhscs;
 
 public class Customer {
 
-  //Fields and Properties
-  int cash = 25;
+  // Fields and Properties
+  int c = 25;
 
-
-  //Methods
+  // Methods
 
   public int pay(int price) {
-    return -5;
+    return c - price;
   }
 
-
-  public void takeCake(Cake bakeCake) {
-
-  }
-
-
+  public void takeCake(Cake bakeCake) {}
 }

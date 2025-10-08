@@ -6,12 +6,18 @@ public class Player {
 
   String name;
   Scanner s;
+  int accomplishments;
 
   public Player(String name) {
 
     this.name = name;
     this.s = new Scanner(System.in);
   }
+
+  public void accomplish(int amount){
+    this.accomplishments += amount;
+  }
+
 
   public void answerQuestions() {
 

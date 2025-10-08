@@ -1,14 +1,12 @@
 package edu.bhscs;
 
-  public class Store {
+public class Store {
 
+  // Methods
 
-    //Methods
+  String placeOfWork = "home";
 
-
-    public String getName() {
-      return "dumb name";
-    }
-
-
+  public String getName() {
+    return "dumb name";
   }
+}
