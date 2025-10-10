@@ -1,3 +1,7 @@
+// Linus Ortiz
+// P2
+// Zero Hero
+// 10/10/2025
 package edu.bhscs;
 
 import java.util.Scanner;
@@ -14,10 +18,9 @@ public class Player {
     this.s = new Scanner(System.in);
   }
 
-  public void accomplish(int amount){
+  public void accomplish(int amount) {
     this.accomplishments += amount;
   }
-
 
   public void answerQuestions() {
 

@@ -1,13 +1,17 @@
+// Linus Ortiz
+// P2
+// Zero Hero
+// 10/10/2025
+
 package edu.bhscs;
 
 public class Baker {
-  // PROPERTIES AND FcIELDS
+  // PROPERTIES AND FIELDS
   Player p;
   Flour f;
   Store placeOfWork;
   int cash;
   String name = "wow";
-
 
   // CONSTRUCTOR
   Baker(Player p) {
@@ -21,7 +25,7 @@ public class Baker {
     System.out.println(c.pay(price));
   }
 
- /* public void learn(int amount){
+  /* public void learn(int amount){
     this.skill += amount;
   } */
 

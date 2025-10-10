@@ -1,9 +1,17 @@
+// Linus Ortiz
+// P2
+// Zero Hero
+// 10/10/2025
+
 package edu.bhscs;
 
 public class Customer {
 
   // Fields and Properties
-  int c = 25;
+  public int c = 25;
+
+  //Constructor
+
 
   // Methods
 
