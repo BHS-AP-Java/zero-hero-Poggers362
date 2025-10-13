@@ -5,10 +5,10 @@
 package edu.bhscs;
 
 public class Cake {
-  //Fields and Properties
+  // Fields and Properties
   String answer = "yes";
 
-  //Constructors
+  // Constructors
 
   // Methods
   public Cake(String answer, Flour f) {}

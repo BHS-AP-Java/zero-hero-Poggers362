@@ -10,8 +10,7 @@ public class Customer {
   // Fields and Properties
   public int c = 25;
 
-  //Constructor
-
+  // Constructor
 
   // Methods
 

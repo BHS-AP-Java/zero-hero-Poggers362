@@ -9,8 +9,7 @@ public class Flour {
   // Fields and Properties
   String p = "!!!!!";
 
-
-  //Constructors
+  // Constructors
 
   // Methods
 }
