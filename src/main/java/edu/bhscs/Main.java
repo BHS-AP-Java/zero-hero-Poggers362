@@ -18,9 +18,7 @@ public class Main {
   public static void main(String[] args) {
 
     new Burger().draw();
-      System.out.println("burger");
-
-
+    System.out.println("burger");
   }
 
   /*
